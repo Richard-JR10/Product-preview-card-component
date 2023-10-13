@@ -2,10 +2,10 @@ body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  min-height: 100vh; /* Ensure full viewport height */
-  margin: 0; /* Remove default body margin */
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+  margin: 0; 
 }
 
 
@@ -105,6 +105,95 @@ background-color: hsl(159, 36%, 18%);
 width: 18px;
 margin-right: 13px;
 }
+
+@media only screen and (max-width: 700px) {
+  .contain {
+    width: 91%;
+    height: 91vh;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    height: 100%;
+    padding: 25px 10px;
+  }
+  
+  .product-img {
+    display: flex;
+    width: 100%;
+    height: 39%;
+  }
+  
+  .product-img img {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .product-type {
+    margin-top: 0;
+    font-size: 3.73vw;
+    margin-bottom: 0;
+  }
+  
+  .product-name {
+    font-size: 8.8vw;
+    line-height: 115.15%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .product-desc {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3.73vw;
+    line-height: 164.43%;
+  }
+  
+  .prices {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .discounted-price {
+  font-size: 8.8vw;
+  margin-right: 19px;
+  }
+  
+  .original-price {
+    font-size: 3.73vw;
+  }
+  
+  .add-to-cart {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  }
+  
+  .add-to-cart button {
+    font-size: 3.73vw;
+    width: 100%;
+    padding: 13px 0px;
+    border-style: none;
+    border-radius: 9px;
+  }
+  
+  .add-to-cart button:active {
+  background-color: hsl(159, 36%, 18%);
+  }
+  
+  .add-to-cart button img {
+  width: 16px;
+  }
+ }
 
 .attribution { font-size: 11px; text-align: center; position:absolute; bottom: 10px;}
 .attribution a { color: hsl(228, 45%, 44%); }
